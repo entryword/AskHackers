@@ -1,4 +1,4 @@
-function load(var id) {
+function load(id) {
     require.config({
         paths: {
             echarts: 'http://echarts.baidu.com/build/dist'
@@ -27,9 +27,9 @@ function load(var id) {
                         radius: '36%',
                         center: ['50%', '50%'],
                         data: [
-                            {value: data[id][0], name: '正面'},
-                            {value: data[id][1], name: '负面'},
-                            {value: data[id][2], name: '客观'},
+                            {value: Math.random()*100, name: '正面'},
+                            {value: Math.random()*100, name: '负面'},
+                            {value: Math.random()*100, name: '客观'},
                         ],
                         itemStyle: {
                             emphasis: {
