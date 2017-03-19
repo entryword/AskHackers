@@ -165,7 +165,7 @@ $(function(){
         var col = 0;
         var arr = document.getElementById('haha');
         var d = arr.innerHTML.toString();
-        alert(d);
+        // alert(d);
         for(var i = 0;i < d.length;i++) {
             var ch = d[i];
             if (ch == ';') {
@@ -183,15 +183,15 @@ $(function(){
         }
         
         var arr2 = document.getElementsByName('article');
-        alert(arr2.length);
+        // alert(arr2.length);
         for (var i = 0; i < arr2.length; i++) {
             arr2[i].onmouseover = function(){
 //                alert(this.id);
                 index = parseInt(this.id);
-                alert(index);
+                // alert(index);
             }
         }
-        alert(data[0][0]);
+        // alert(data[0][0]);
     }
     </script>
     </body>

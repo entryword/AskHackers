@@ -29,7 +29,7 @@ def showowanum(id):
     entry = []
     hidden = ""
     i = 0
-    for storyid in idset:
+    for storyid in idset[start: start+10]:
         item = getrecord(storyid)
 #        print item
         entry.append({"id": item[0], "byauthor": item[1], "score": item[2], "title": item[3], "time_ts": item[4], "num": i})
